@@ -1,0 +1,138 @@
+@media (max-width: 1350px){
+  .sidepanel{
+    display: none;
+  }
+}
+@media (max-width: 1200px){
+  .container{
+    max-width: 1160px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1150px){
+  .experience__wrapper{
+    padding: 0;
+  }
+}
+@media (max-width: 1100px){
+  .contacts__photo{
+    display: none;
+  }
+  .contacts__wrapper{
+    max-width: 585px;
+  }
+}
+@media (max-width: 1000px){
+  .description__skills{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px){
+  .skills__items{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .payment__wrapper{
+    grid-template-columns: repeat(1, 365px);
+    padding: 0 100px;
+  }
+}
+@media (max-width: 850px){
+  .description__container{
+    display: block;
+  }
+  .description__text{
+    margin-bottom: 20px
+  }
+  .description__photo{
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 800px){
+  .skills__possibility{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .experience__wrapper{
+    grid-template-columns: repeat(1, minmax(auto, 425px));
+    row-gap: 40px;
+  }
+  .portfolio__wrapper{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .portfolio__item:nth-child(4){
+    grid-column: 3/4;
+  }
+  .portfolio__item:nth-child(6){
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 650px){
+  .title{
+    &_fz36{
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &_fz48{
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+  .promo__title{
+    width: 350px;
+  }
+}
+@media (max-width: 600px){
+  .payment__wrapper{
+    padding: 0;
+  }
+  .skills__items{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .portfolio__wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .portfolio__item:nth-child(4){
+    height: 100%;
+    grid-column: none;
+  }
+  .portfolio__item:nth-child(6){
+    grid-row: none;
+    grid-column: none;
+  }
+}
+@media (max-width: 500px){
+  .skills__possibility{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 0 auto;
+    max-width: 300px;
+    padding-top: 40px;
+  }
+  .title{
+    &_fz20{
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &_fz48{
+      font-size: 26px;
+    }
+  }
+}
+@media (max-width: 450px){
+  .description__photo{
+    img{
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 400px){
+  .skills__items{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+}

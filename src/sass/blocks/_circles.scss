@@ -1,0 +1,29 @@
+.circle{
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+  @include before_circle();
+  &_left_center{
+    padding: 8px 0 8px 15px;
+  }
+  &_left_top{
+    min-width: 25px;
+    padding: 15px 30px 15px 15px;
+  }
+  &_center_center{
+    padding: 5px 0;
+  }
+  &_left_center:before{
+    top: 0px;
+    left: 0px;
+  }
+  &_left_top:before{
+    top: 0;
+    left: 0;
+  }
+  &_center_center:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
